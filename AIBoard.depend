@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1516828653 source:/home/youness/Documents/AIBoard/main.cpp
+	<boost/lambda/lambda.hpp>
+	<boost/regex.hpp>
+	<iostream>
+	<string>
+	<iterator>
+	<algorithm>
+
+1517262996 source:/home/youness/Documents/AIBoard/src/IO/REST-server/RestServer.cpp
+	"RestServer.h"
+
+1516743128 /home/youness/Documents/AIBoard/include/IO/RestServer.h
+
+1516821423 /usr/local/include/boost/iterator
+
+1516821438 /usr/local/include/boost/algorithm
+
+1517262318 source:/home/youness/Documents/AIBoard/include/IO/Component/AutoEncoder.h
+	"Component.h"
+
+1517257555 /home/youness/Documents/AIBoard/include/IO/Component/Component.h
+
+1517258908 source:/home/youness/Documents/AIBoard/src/main.cpp
+	<iostream>
+	<string>
+	<iterator>
+	<algorithm>
+
+1517257555 source:/home/youness/Documents/AIBoard/include/IO/Component/Component.h
+
+1517263009 source:/home/youness/Documents/AIBoard/src/IO/Component/AutoEncoder.cpp
+	"AutoEncoder.h"
+
+1517262318 /home/youness/Documents/AIBoard/include/IO/Component/AutoEncoder.h
+	"Component.h"
+
+1517262980 source:/home/youness/Documents/AIBoard/src/IO/Component/Component.cpp
+	"Component.h"
+
+1517262989 source:/home/youness/Documents/AIBoard/src/IO/Interpreter/Parser.cpp
+	"Parser.h"
+
+1517260984 /home/youness/Documents/AIBoard/include/IO/Interpreter/Parser.h
+
+1516743128 /home/youness/Documents/AIBoard/include/IO/REST-Server/RestServer.h
+
+1517263002 source:/home/youness/Documents/AIBoard/src/Runtime/Bus.cpp
+	"Bus.h"
+
+1517257420 /home/youness/Documents/AIBoard/include/Runtime/Bus.h
+
