@@ -15,7 +15,6 @@
 					<Add option="-g" />
 					<Add option="-std=c++17" />
 					<Add option="-pthread" />
-					<Add option="-lboost_system -lboost_thread -lpthread" />
 					<Add directory="include/IO/Interpreter" />
 					<Add directory="include/Runtime" />
 					<Add directory="include/IO/Component" />
@@ -23,10 +22,12 @@
 					<Add directory="/usr/local/include/boost" />
 				</Compiler>
 				<Linker>
+					<Add option="-lboost_system -lboost_thread -lpthread" />
 					<Add library="/usr/local/lib/libboost_filesystem.a" />
 					<Add library="/usr/local/lib/libboost_system.a" />
-					<Add library="/usr/lib/x86_64-linux-gnu/libpthread.a" />
 					<Add library="/usr/lib/x86_64-linux-gnu/libpthread_nonshared.a" />
+					<Add library="/usr/local/lib/libboost_thread.a" />
+					<Add library="/usr/local/lib/libboost_thread.so" />
 					<Add directory="/usr/local/lib" />
 					<Add directory="/usr/lib/x86_64-linux-gnu" />
 				</Linker>

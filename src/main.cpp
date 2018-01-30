@@ -22,7 +22,7 @@ int main()
     /// Launch runtime
 
     ipstream pipe_stream;
-    child c("gcc --version", std_out > pipe_stream);
+    child c("g++ --version", std_out > pipe_stream);
 
     string line;
 
