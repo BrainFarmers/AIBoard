@@ -14,8 +14,22 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add option="-std=c++17" />
+					<Add option="-pthread" />
+					<Add option="-lboost_system -lboost_thread -lpthread" />
 					<Add directory="include/IO/Interpreter" />
+					<Add directory="include/Runtime" />
+					<Add directory="include/IO/Component" />
+					<Add directory="include/IO/REST-Server" />
+					<Add directory="/usr/local/include/boost" />
 				</Compiler>
+				<Linker>
+					<Add library="/usr/local/lib/libboost_filesystem.a" />
+					<Add library="/usr/local/lib/libboost_system.a" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libpthread.a" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libpthread_nonshared.a" />
+					<Add directory="/usr/local/lib" />
+					<Add directory="/usr/lib/x86_64-linux-gnu" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/AIBoard" prefix_auto="1" extension_auto="1" />
@@ -37,14 +51,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/IO/Component/AutoEncoder.h">
-			<Option compile="1" />
-			<Option link="1" />
-		</Unit>
-		<Unit filename="include/IO/Component/Component.h">
-			<Option compile="1" />
-			<Option link="1" />
-		</Unit>
+		<Unit filename="include/IO/Component/AutoEncoder.h" />
+		<Unit filename="include/IO/Component/Component.h" />
 		<Unit filename="include/IO/Interpreter/Parser.h" />
 		<Unit filename="include/IO/REST-Server/RestServer.h" />
 		<Unit filename="include/Runtime/Bus.h" />
